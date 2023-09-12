@@ -15,6 +15,7 @@ jobs:
       run: kubectl get pods -A
     - name: Setup Docker environment
       run: |
+        echo "test"
         export SHELL=/bin/bash
         eval $(minikube -p minikube docker-env)
     - name: Print current app version
